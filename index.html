@@ -2,6 +2,33 @@
 <html lang="en">
 
 <head>
+  <style>
+
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    main {
+      max-width: 100%;
+    }
+    @media only screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      header h3 {
+        font-size: 1.5em;
+      }
+
+      .navlist li {
+        display: block;
+      }
+
+      .portfolio-card {
+        width: 100%;
+      }
+    }
+  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="style.css">
@@ -24,13 +51,12 @@
     </ul>
   </header>
 
+  <main class="pt-24 lg:w-1/2 lg:py-24">
   <div class="aboutme">
     <h2>About Me</h2>
-    <p>Hello there! I'm Jeffrey, a full-stack web developer who uses React and Ruby on Rails to build .
+    <p>Hello there! I'm Jeffrey, a full-stack web developer who uses React and Ruby on Rails to transform ideas into dynamic web applications. With a keen eye for detail and a commitment to clean code, I thrive on turning challenges into innovative solutions.
     </p>
   </div>
-
-
 
   <div class="experience-item">
     <h2 id="experience">Experience</h2>
@@ -49,13 +75,13 @@
   </div>
 
   <div>
-    <h2 id="portfolio">Portfolio</h2>
+    <h2 style="padding-left: 2em; padding-right: 2em;">Portfolio</h2>
     <div class="portfolio-item">
       <div class="portfolio-card">
-        <img src="***">
+        <img src="./assets/tictactoe.png">
         <div class="portfolio-info">
-          <h3>Project 1</h3>
-          <p>Project 1 description</p>
+          <h3>Tic-Tac-Toe Game</h3>
+          <p>Built using React.js and CSS</p>
         </div>
       </div>
     </div>
@@ -70,38 +96,31 @@
       </div>
     </div>
   </div>
+</main>
 
   <div>
-    <h2 id="contact">Contact Me</h2>
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-
-      <div class="fcf-form-group">
-        <label for="Name" class="fcf-label">Your name</label>
-        <div class="fcf-input-group">
-          <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+    <h2 id="contact"></h2>
+    <div class="container">
+      <form class="form">
+        <div class="descr">Contact</div>
+        <div class="input">
+            <input required="" autocomplete="off" type="text">
+            <label for="name">Name</label>
         </div>
-      </div>
-
-      <div class="fcf-form-group">
-        <label for="Email" class="fcf-label">Your email address</label>
-        <div class="fcf-input-group">
-          <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+  
+        <div class="input">
+            <input required="" autocomplete="off" name="email" type="text">
+            <label for="email">E-mail</label>
         </div>
-      </div>
-
-      <div class="fcf-form-group">
-        <label for="Message" class="fcf-label">Your message</label>
-        <div class="fcf-input-group">
-          <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+  
+        <div class="input">
+            <textarea required="" cols="30" rows="1" id="message"></textarea>
+            <label for="message">Message</label>
         </div>
-      </div>
-
-      <div class="fcf-form-group">
-        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send
-          Message</button>
-      </div>
-
-    </form>
+        <button>Send message →</button>
+      </form>
+  </div>
+  
   </div>
 
   <footer>
