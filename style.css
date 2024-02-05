@@ -51,7 +51,7 @@ ul {
 }
 
 .navlist {
-  margin-top: 3em;
+  margin-top: 2em;
   width: 230px;
 }
 
@@ -137,12 +137,14 @@ div {
 }
 
 .fa {
-  padding: 1.5rem;
-  font-size: xx-large;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-size: 200% !important;
   width: 10px;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
+  float: right;
 }
 
 .fa:hover {
@@ -165,6 +167,7 @@ label {
   border: 1px solid #396afc;
   background: linear-gradient(to right, #002970, #2e2f7e);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-right: 25px;
 }
 
 .container form .descr {
@@ -268,6 +271,7 @@ label {
 
 img {
   width: 180px;
+  border-radius: 10px;
 }
 
 .aboutme {
@@ -396,7 +400,7 @@ body {
   background: #25303B;
 }
 section#timeline {
-  width: 80%;
+  width: 70%;
   margin: 20px auto;
   position: relative;
 }
@@ -520,4 +524,15 @@ section#timeline article:nth-child(5) div.inner h2 {
 }
 section#timeline article:nth-child(5) div.inner h2:after {
   background: #ff6f00;
+}
+
+#logos {
+width: auto;
+height: 80px;
+padding-top: 1em;
+padding-bottom: 1em;
+}
+
+.logobox {
+  width: 375px;
 }
